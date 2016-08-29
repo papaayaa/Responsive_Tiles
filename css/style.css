@@ -1,0 +1,228 @@
+/* Minimal css reset, for performance issue*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl,
+dt, dd, blockquote, address{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Bridone';
+    src:  url('fonts/Bridone/Bridone.woff2') format('woff2'),
+          url('fonts/Bridone/Bridone.woff') format('woff');
+}
+@font-face {
+    font-family: 'Futura';
+    src:  url('fonts/Futura/Futura-CondensedMedium.woff2') format('woff2'),
+          url('fonts/Futura/Futura-CondensedMedium.woff') format('woff');
+}
+
+body{
+  width: 100%;
+}
+h1,h2,h3,h4,p,ul{
+  text-align: center;
+}
+h4{
+  color: white;
+  letter-spacing: 2px;
+}
+h3{color: white;
+}
+.bridone{
+  font-family: 'Bridone', "Times New Roman", Georgia, Serif;
+}
+.futura{
+  font-family: 'Futura', "Times New Roman", Georgia, Serif;
+}
+h1{
+  margin-top:25%;
+}
+h2{
+  margin-top:30%;
+  margin-bottom: 0%;
+  padding-bottom: 20px;
+}
+p{
+  color: #565656;
+}
+
+.tiles{
+  margin: 0 auto;
+  line-height: 0;
+  padding-right: 0;
+  -webkit-column-gap: 0%;
+  -webkit-column-rule-width: 0px; /* Saf3, Chrome*/
+  -moz-column-gap: 0%; /* FF3.5+ */
+  column-gap: 0px; /* Opera 11+*/
+  padding-right: 0;
+  padding-top: 30px;
+}
+.ballon {
+  background-color: #FA6767;
+}
+.ballon2 {
+  background-color: #FA6767;
+}
+.equilibrium{
+  background-color: #70A8E9;
+}
+.transatlantique{
+  background-color: #04BA97;
+}
+.foraine{
+  background-color: #FED57B;
+}
+.button{
+	border:1px solid #000;
+	display:inline-block;
+	color:#000;
+	font-family: 'Futura', "Times New Roman", Georgia, Serif;
+	padding:10px 10px;
+  width: 50px;
+  height: 50px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000;
+}
+#home{
+  background-color: white;
+}
+.about{
+    background-color:#F1F1F1;
+}
+
+/* Adaptation a la taille des devices de plus de 320px */
+@media screen and (min-width: 320px){
+  h1{
+    font-size: 45px;
+    letter-spacing: 2px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  h4{
+    font-size: 12px;
+    padding-top: 14px;
+  }
+  .tiles{
+    width: 100px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+   }
+
+   .tiles img{
+    width:50px;
+    height:50px;
+   }
+
+  .ballon{
+    height:650px;
+  }
+
+  .equilibrium{
+    height:650px;
+  }
+  .transatlantique{
+    height:650px;
+  }
+  .foraine{
+    height:650px;
+  }
+  #circle{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.5px solid white;
+  height: 35px;
+  width: 35px;
+  -moz-border-radius:35px;
+  -webkit-border-radius: 35px;
+    margin: 0 auto;
+}
+p{
+  margin-bottom: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
+  letter-spacing: 1px;
+}
+#carreau{
+  padding-top: 30px;
+}
+  #home p{
+  text-align: center;
+  font-size: 10px;
+  padding-top: 20px;
+}
+}
+
+@media screen and (min-width: 800px){
+  h1{
+    font-size: 72px;
+    letter-spacing: 2px;
+  }
+  h2{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-top:35px;
+  }
+  h4{
+    font-size: 20px;
+    padding-top: 17px;
+  }
+  .tiles{
+    width: 500px;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+   }
+   .tiles img{
+    width:125px;
+    height:125px;
+   }
+  .ballon{
+    height:800px;
+  }
+
+  .equilibrium{
+    height:800px;
+  }
+    .transatlantique{
+    height:800px;
+  }
+     .foraine{
+    height:800px;
+  }
+  #home{
+    height: 670px;
+  }
+  #home p{
+  margin-left: 62%;
+  text-align: left;
+  font-size: 15px;
+}
+
+  #circle{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.5px solid white;
+  height: 50px;
+  width: 50px;
+  -moz-border-radius:75px;
+  -webkit-border-radius: 75px;
+    margin: 0 auto;
+}
+p{
+  margin-bottom: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+  letter-spacing: 2px;
+}
+#carreau{
+  padding-top: 60px;
+}
+}
